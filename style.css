@@ -1,10 +1,12 @@
 :root {
-	--shade1: #111111;
-	--shade2: #777777;
-	--shade3: #aaaaaa;
+	--shade1: #111811;
+	--shade2: #7b7b77;
+	--shade3: #aaafad;
 	--shade4: #aab0c0;
-	--shade5: #f0e9e9;
-	--shade6: #bb4422;
+	--shade5: #e9e0e0;
+	--shade6: #aa2211;
+	--shade7: #cca044;
+	--shade8: #bbc0d0;
 }
 
 body {
@@ -15,20 +17,37 @@ body {
 }
 
 h1 {
-	color: gold;
+	color: var(--shade7);
+}
+
+h2 {
+	color: var(--shade1);
 }
 
 button {
-	width: 180px;
-	height: 50px;
+	width: 210px;
+	height: 80px;
+	background: var(--shade4);
+	border: none;
+	font-size: large;
+	font-weight: bold;
+	color: var(--shade5);
+}
+
+button:hover {
+	background: var(--shade8);
+}
+
+button:active {
+	background: var(--shade5);
+	color: white;
 }
 
 header {
 	background: var(--shade1);
-	color: var(--shade3);
 	padding: 20px;
 	width: 80%;
-	height: 100px;
+	color: var(--shade3);
 }
 
 section {
@@ -59,7 +78,6 @@ section {
 	top: 0;
 	left: -100px;
 	background: var(--shade1);
-	/* transform: rotate(-45deg); */
 }
 
 #box2 {
@@ -78,7 +96,7 @@ section {
 	height: 300px;
 	bottom: -150px;
 	left: -150px;
-	background: gold;
+	background: var(--shade7);
 	transform: rotate(-45deg);
 }
 
@@ -119,7 +137,6 @@ section {
 	top: 280px;
 	right: 0px;
 	background: var(--shade4);
-	/* transform: rotate(-45deg); */
 }
 
 #blocker-left {
@@ -151,18 +168,18 @@ section {
 
 #blocker-bottom {
 	position: absolute;
-	bottom: -200px;
+	bottom: -400px;
 	left: -200px;
 	width: 940px;
-	height: 200px;
+	height: 400px;
 	background: white;
 }
 
 #left-background {
 	position: absolute;
 	left: 0;
+	right: 780px;
 	top: 0;
-	width: 50%;
-	height: 940px;
+	height: 1100px;
 	background: var(--shade3);
 }
