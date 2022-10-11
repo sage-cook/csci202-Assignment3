@@ -1,0 +1,54 @@
+<!DOCCTYPE html>
+<html>
+	<head>
+		<title>Theo Van Doesburg - Counter Composition XIII Animated</title>
+		<link rel="stylesheet" href="style.css"/>
+		<link id="animations" rel="stylesheet" href="animation.css"/>
+		<script>
+			const ANIM_HREF = "animation.css"
+			var anim_enabled = true;
+			function toggle_anim()
+			{
+				if(anim_enabled)
+				{
+					document.getElementById('animations').href = "";
+					document.getElementById('anim-toggle').innerHTML = 'Enable Animations';
+					anim_enabled = false;
+				}
+				else
+				{
+					document.getElementById('animations').href = ANIM_HREF;
+					document.getElementById('anim-toggle').innerHTML = 'Disable Animations';
+					anim_enabled = true;
+				}
+			}
+		</script>
+	</head>
+	<body scroll="no" >
+		
+		<div id="canvas">
+			<div id="box7"></div>
+			<div id="box5"></div>
+			<div id="box1"></div>
+			<div id="box2"></div>
+			<div id="box3"></div>
+			<div id="box4"></div>
+			<div id="box6"></div>
+			
+			<div id="blocker-left"></div>
+			<div id="blocker-right"></div>
+			<div id="blocker-top"></div>
+			<div id="blocker-bottom"></div>
+		</div>
+		<div id="left-background">
+			<header>
+				<h1>Counter Composition XIII</h1>
+				<p>By Theo Van Doesburg - Recreated/Animated by Sage Cook</p>
+			</header>
+			<section>
+				<h2>Toggle on or off animation:</h2>
+				<button id="anim-toggle" class="enabled" onclick="toggle_anim()">Disable Animations</button>
+			</section>
+		</div>
+	</body>
+</html>

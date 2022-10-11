@@ -1,0 +1,33 @@
+#canvas {
+  transition: 2s;
+}
+
+#canvas:hover {
+  width: 540px;
+  height: 540px;
+}
+
+#box1 {
+  transition: 2s;
+}
+
+#box1:hover {
+	left: -40px;
+}
+
+#box6 {
+  transition: 2s;
+}
+
+#box6:hover {
+	right: -438px;
+}
+
+#box5 {
+  transition: 2s;
+}
+
+#box5:hover {
+	transform: none;
+	top: -60;
+}

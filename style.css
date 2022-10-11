@@ -1,0 +1,168 @@
+:root {
+	--shade1: #111111;
+	--shade2: #777777;
+	--shade3: #aaaaaa;
+	--shade4: #aab0c0;
+	--shade5: #f0e9e9;
+	--shade6: #bb4422;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+	background: var(--shade3);
+	margin: 0;
+	overflow: hidden;
+}
+
+h1 {
+	color: gold;
+}
+
+button {
+	width: 180px;
+	height: 50px;
+}
+
+header {
+	background: var(--shade1);
+	color: var(--shade3);
+	padding: 20px;
+	width: 80%;
+	height: 100px;
+}
+
+section {
+	background: var(--shade2);
+	width: 60%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+#canvas {
+	position: absolute;
+	top: 100px;
+	right: 120px;
+	width: 480px;
+	height: 480px;
+	background: var(--shade2);
+	outline: 20px solid white;
+}
+
+#canvas * {
+}
+
+#box1 {
+	position: absolute;
+	width: 300px;
+	height: 540px;
+	top: 0;
+	left: -100px;
+	background: var(--shade1);
+	/* transform: rotate(-45deg); */
+}
+
+#box2 {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	top: -170px;
+	left: -170px;
+	background: var(--shade4);
+	transform: rotate(-45deg);
+}
+
+#box3 {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	bottom: -150px;
+	left: -150px;
+	background: gold;
+	transform: rotate(-45deg);
+}
+
+#box4 {
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	bottom: -165px;
+	left: -85px;
+	background: var(--shade5);
+	transform: rotate(-45deg);
+}
+
+#box5 {
+	position: absolute;
+	width: 700px;
+	height: 400px;
+	top: -8px;
+	right: 125px;
+	background: var(--shade5);
+	transform: rotate(-45deg);
+}
+
+#box6 {
+	position: absolute;
+	width: 800px;
+	height: 800px;
+	bottom: -200px;
+	right: -685px;
+	background: var(--shade6);
+	transform: rotate(-45deg);
+}
+
+#box7 {
+	position: absolute;
+	width: 800px;
+	height: 300px;
+	top: 280px;
+	right: 0px;
+	background: var(--shade4);
+	/* transform: rotate(-45deg); */
+}
+
+#blocker-left {
+	position: absolute;
+	top: -200px;
+	left: -200px;
+	width: 200px;
+	height: 940px;
+	background: white;
+}
+
+#blocker-right {
+	position: absolute;
+	top: -200px;
+	right: -200px;
+	width: 200px;
+	height: 940px;
+	background: white;
+}
+
+#blocker-top {
+	position: absolute;
+	top: -200px;
+	left: -200px;
+	width: 940px;
+	height: 200px;
+	background: white;
+}
+
+#blocker-bottom {
+	position: absolute;
+	bottom: -200px;
+	left: -200px;
+	width: 940px;
+	height: 200px;
+	background: white;
+}
+
+#left-background {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 940px;
+	background: var(--shade3);
+}
